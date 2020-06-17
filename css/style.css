@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.m-f {
+    font-family: 'Aclonica', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    background-image: url(../images/back-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100vh;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+.header-content {
+    padding-top: 40vh;
+    text-align: center;
+}
+
+.header-content h1,
+.intro-content h1,
+.contact-section h1 {
+    font-size: 42px;
+}
+
+.header-content h2 span {
+    color: #f1c11a;
+    line-height: 100px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    padding: 15px 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+    transition: all 400ms ease-in-out;
+}
+
+.btn-fill {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-fill:hover {
+    background-color: #f1c11a;
+    border-color: transparent;
+}
+
+.btn-trans:hover {
+    background-color: #f1c11a;
+    color: #000000;
+    border-color: transparent;
+}
+
+
+/* Intro section */
+
+.intro {
+    background-color: #ffffff;
+    padding: 15vh 0;
+}
+
+.intro-content {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-content div {
+    width: 50%;
+}
+
+.intro-text p {
+    text-align: justify;
+    color: #828282;
+    line-height: 40px;
+}
+
+
+/* services section*/
+
+.services {
+    background-color: #f1c11a;
+    height: 50vh;
+    clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -15vh;
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bucket {
+    width: 25%;
+    margin: 130px 3%;
+    color: #ffffff;
+}
+
+.bucket p {
+    color: #000000;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.contact {
+    background-color: #ffffff;
+    padding: 10vh 0;
+    text-align: center;
+}
+
+input[type='text'],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-color: 1px solid #cccccc;
+}
+
+.contact-section div {
+    padding: 10px 3%;
+}
+
+.btn-submit {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    background-color: #f1c11a;
+    border-color: transparent;
+    color: #000000;
+}
+
+
+/* footer section */
+
+footer {
+    background-color: #f1c11a;
+    clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -10vh;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 30px;
+}
+
+
+/* laptop 1024 */
+
+@media screen and (max-width:1024px) {
+    .intro-text p {
+        margin-top: 18px;
+        line-height: 30px;
+    }
+    .services {
+        height: 65vh;
+        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+}
+
+
+/* tablet-768 */
+
+@media screen and (max-width: 768px) {
+    .header-content h2 {
+        font-size: 20px;
+    }
+    .intro-content {
+        display: block;
+        height: 90vh;
+    }
+    .intro-content div {
+        width: 100%;
+    }
+    .services {
+        height: 100vh;
+        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .service-content {
+        display: block;
+        margin-top: -15vh;
+        padding-top: 1px;
+    }
+    .bucket {
+        width: 100%;
+        margin: 80px 3%;
+    }
+}
+
+
+/* Mobile L-425 */
+
+@media screen and (max-width: 425px) {
+    .header-content h1 {
+        margin-top: -15vh;
+    }
+    .header-content h2 {
+        font-size: 12px;
+    }
+    .btn {
+        background-color: transparent;
+        border: 3px solid #ffffff;
+        padding: 10px 50px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: #ffffff;
+        margin: 25px;
+        transition: all 400ms ease-in-out;
+    }
+    .btn-fill {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .intro-text .m-f {
+        font-size: 32px;
+        margin-top: 25px;
+    }
+    .intro-text p {
+        margin-top: 20px;
+        line-height: 35px;
+    }
+    .services {
+        height: 120vh;
+        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .contact-section .m-f {
+        font-size: 32px;
+        margin-top: 25px;
+    }
+    .btn-submit {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 20px;
+        margin-top: 20px;
+        align-content: center;
+        padding: 10px 15%;
+    }
+    .contact-section div {
+        padding: 10px 3%;
+        align-content: center;
+        display: flex;
+    }
+}
+
+
+/* Mobile M-375 */
+
+@media screen and (max-width:375px) {
+    .header-content h2 {
+        font-size: 10.5px;
+        line-height: -10px;
+    }
+    .btn {
+        background-color: transparent;
+        border: 3px solid #ffffff;
+        padding: 12px 50px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: #ffffff;
+        margin: 25px;
+        transition: all 400ms ease-in-out;
+    }
+    .btn-fill {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .intro-text .m-f {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .intro-text p {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+    .services {
+        height: 125vh;
+        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .btn-submit {
+        background-color: #000000;
+        color: #ffffff;
+        margin-left: 1px;
+    }
+}
+
+
+/* Mobile S-320 */
+
+@media screen and (max-width: 320px) {
+    .header-content h2 {
+        font-size: 8px;
+    }
+    .btn {
+        background-color: transparent;
+        border: 3px solid #ffffff;
+        padding: 10px 40px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: #ffffff;
+        margin: 25px;
+        transition: all 400ms ease-in-out;
+    }
+    .btn-fill {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .intro-text .m-f {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .services {
+        height: 145vh;
+        clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .contact-section .m-f {
+        font-size: 28px;
+        margin-top: 25px;
+    }
+    .btn-submit {
+        background-color: #000000;
+        color: #ffffff;
+        margin-left: -1px;
+    }
+}
